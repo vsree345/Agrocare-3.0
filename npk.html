@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Esigned</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Agrocare
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="do.html"> My Farm </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html"> My Locality </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li> 
+              </ul>
+              <div class="user_option">
+                <a href="">
+                  <img src="images/user.png" alt=""style="filter: invert(100%);">
+                </a>
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- who section with text fields -->
+  <section class="who_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="img-box">
+            <img src="images/who-img.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Enter Data
+              </h2>
+            </div>
+            <form>
+              <!-- Input Fields -->
+              <div class="form-group">
+                <label for="year">Enter Year:</label>
+                <input type="number" class="form-control" id="year" placeholder="Enter Year">
+              </div>
+              <div class="form-group">
+                <label for="AREA">Enter Area:</label>
+                <input type="text" class="form-control" id="AREA" placeholder="Enter Area">
+              </div>
+              <div class="form-group">
+                <label for="N">Input 3:</label>
+                <input type="number" class="form-control" id="input3" placeholder="Enter input 3">
+              </div>
+              <!-- Add more input fields -->
+              <div class="form-group">
+                <label for="P">Input 4:</label>
+                <input type="number" class="form-control" id="input4" placeholder="Enter input 4">
+              </div>
+              <div class="form-group">
+                <label for="K">Input 5:</label>
+                <input type="number" class="form-control" id="input5" placeholder="Enter input 5">
+              </div>
+              <div class="form-group">
+                <label for="t">Input 6:</label>
+                <input type="number" class="form-control" id="input6" placeholder="Enter input 6">
+              </div>
+              <div class="form-group">
+                <label for="hu">Input 7:</label>
+                <input type="number" class="form-control" id="input7" placeholder="Enter input 7">
+              </div>
+              <div class="form-group">
+                <label for="ph">Input 8:</label>
+                <input type="number" class="form-control" id="input8" placeholder="Enter input 8">
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- Output Fields Container -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end who section with text fields -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <!-- Your existing info section content here -->
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+  {% if prediction1 is defined and prediction2 is defined and prediction3 is defined %}
+            <div class="mb-4">
+                <h2>Predicted Rainfall and Crop:</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Rainfall in Jan-Feb: {{ prediction1 }} mm</p>
+                        <p>Rainfall in Mar-May: {{ prediction2 }} mm</p>
+                        <p>Rainfall in Jun-Sep: {{ prediction3 }} mm</p>
+                        <p>Rainfall in Oct-Dec: {{ prediction4 }} mm</p>
+                        <p>Crop in Jan-Feb: {{ predictiion1 }} mm</p>
+                        <p>Crop in Mar-May: {{ predictiion2 }} mm</p>
+                        <p>Crop in Jun-Sep: {{ predictiion3 }} mm</p>
+                        <p>Crop in Oct-Dec: {{ predictiion4 }} mm</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- Your additional scripts here -->
+</body>
+
+</html>
